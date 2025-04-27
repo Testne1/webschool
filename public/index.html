@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quản lý trường học</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Thông báo yêu cầu đăng nhập -->
+    <div id="login-prompt" style="display: none;">
+        <h1>Vui long đăng nhập</h1>
+        <p>đăng nhập để sử dụng.</p>
+        <a href="login.html">đi đến đăng nhập</a>
+    </div>
+
+    <!-- Giao diện chính -->
+    <div id="main-content" style="display: none;">
+        <h1>Chào mừng đến với trang ghi nhận lỗi </h1>
+
+        <!-- Form nhập lỗi vi phạm -->
+        <div id="violation-form">
+            <h2>ghi lỗi</h2>
+            <label for="class-select">chọn lớp:</label>
+            <select id="class-select">
+                <option value="">-- chọn lớp  --</option>
+            </select>
+
+            <label for="student-name">nhập tên học sinh:</label>
+            <input type="text" id="student-name" placeholder="nhập tên">
+
+            <label for="violation-select">chọn lỗi:</label>
+            <select id="violation-select">
+                <option value="">-- chọn lỗi --</option>
+            </select>
+
+            <button id="record-violation-btn">xác nhận</button>
+            <p id="result-message"></p>
+        </div>
+
+        <!-- Bảng xếp hạng lớp -->
+        <div id="ranking-section" style="display: none; margin-top: 30px;">
+            <h2>Bảng xếp hạng</h2>
+            <table border="1" id="ranking-table">
+                <thead>
+                    <tr>
+                        <th>lớp</th>
+                        <th>điểm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ranking data will be dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+        <!-- Kết nối JavaScript -->
+        <script src="assets/script.js"></script>
+</body>
+
+</html>

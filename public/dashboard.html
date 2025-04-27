@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>School Management System</h1>
+        <p>Logged in as: <span id="userRole"></span></p>
+        <button id="logoutButton">Logout</button>
+    </header>
+    <main>
+        <!-- Admin Panel -->
+        <div id="adminPanel" style="display:none;">
+            <h2>Admin Panel</h2>
+            <div id="addClassPanel">
+                <h3>Add Class</h3>
+                <form id="addClassForm">
+                    <label for="className">Class Name:</label>
+                    <input type="text" id="className" required>
+                    <button type="submit">Add Class</button>
+                </form>
+            </div>
+            <div id="classList">
+                <h3>Class List</h3>
+                <ul id="classListContainer"></ul>
+            </div>
+        </div>
+
+        <!-- Teacher Panel -->
+        <div id="teacherPanel" style="display:none;">
+            <h2>Teacher Panel</h2>
+            <div id="recordViolationPanel">
+                <h3>Record Violation</h3>
+                <form id="recordViolationForm">
+                    <label for="studentId">Student ID:</label>
+                    <input type="number" id="studentId" required>
+                    <label for="description">Violation Description:</label>
+                    <textarea id="description" required></textarea>
+                    <button type="submit">Record Violation</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- General Panel -->
+        <div id="generalPanel">
+            <h2>Welcome to the School Management System</h2>
+            <p>Please use the features provided based on your role.</p>
+        </div>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
