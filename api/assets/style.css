@@ -1,0 +1,118 @@
+/* Đặt toàn bộ nội dung trang ở giữa */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    min-height: 100vh;
+    /* Đảm bảo chiều cao của trang */
+    background-color: #f4f4f9;
+    /* Màu nền nhẹ */
+}
+
+
+/* Phong cách container chính */
+
+#main-content,
+#login-prompt {
+    background: #ffffff;
+    /* Màu nền trắng */
+    border: 1px solid #ddd;
+    /* Đường viền nhẹ */
+    border-radius: 10px;
+    /* Bo góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng nhẹ */
+    padding: 20px;
+    /* Khoảng cách bên trong */
+    text-align: center;
+    /* Căn giữa nội dung */
+    max-width: 600px;
+    /* Chiều rộng tối đa */
+    width: 100%;
+    /* Chiều rộng linh hoạt */
+}
+
+
+/* Cách điệu tiêu đề */
+
+h1,
+h2 {
+    color: #333;
+}
+
+
+/* Cách điệu bảng xếp hạng */
+
+#ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#ranking-table th,
+#ranking-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    /* Căn giữa văn bản trong bảng */
+}
+
+#ranking-table th {
+    background: #007bff;
+    color: #fff;
+}
+
+#ranking-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* Nút bấm */
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+/* Form nhập liệu */
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#result-message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
